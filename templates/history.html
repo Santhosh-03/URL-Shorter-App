@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}
+History
+{% endblock %}
+
+{% block body %}
+<br />
+<h3 class="my-0 font-weight-normal text-center font-weight-bold">All the previously shortened URL's</h3>
+<br />
+<table id="data" class="table table-striped">
+    <thead>
+      <tr>
+        <th class="text-center">ID</th>
+        <th class="text-center">Short Code</th>
+        <th class="text-center">Original URL</th>
+        <th class="text-center">Shortened URL</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for url in urls %}
+        <tr>
+          <td class="text-center">{{ url['id'] }}</td>
+          <td class="text-center">{{ url['short_code'] }}</td>
+          <td class="text-center">{{ url['long_url'] }}</td>
+          <td class="text-center">{{ url['short_url'] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}

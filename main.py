@@ -60,7 +60,7 @@ def your_url():
             short_code = ''   
             for _ in range(6):
                 short_code += random.choice(dataset)
-            final_short_url = '127.0.0.1:5000/' + short_code
+            final_short_url = 'https://url-short-application.herokuapp.com/' + short_code
             new_url = URLSHORT(original_url, short_code, final_short_url)
             db.session.add(new_url)
             db.session.commit()

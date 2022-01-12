@@ -7,7 +7,6 @@ app.secret_key = 'abarakadabra'
 
 ##############################
 
-#app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg2://postgres:sandy03santhosh@localhost/URL_SHORTENER'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://lehwatanwaoydj:055b01d50772ecd5ba272189fece969a00dc1520997ed80bbb4d3ff72ed874ce@ec2-34-236-87-247.compute-1.amazonaws.com:5432/da10cs3puucbkh'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
